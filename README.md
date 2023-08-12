@@ -92,9 +92,9 @@ docker compose up -d
 
 ## Optional
 
-I don't care if you use this project for commercial purposes or not. However, if you want to support me, you can do so by donating to my [Ko-fi](https://ko-fi.com/n4ze3m) page or GitHub Sponsors.
+I don't care if you use this project for commercial purposes :)) . However, if you want to support me, you can do so by donating to my [Ko-fi](https://ko-fi.com/n4ze3m) page or GitHub Sponsors.
 
-Note that I will not be providing any support for this project. If you want to contribute, feel free to open a pull request.
+Note that I will not be providing any support for this project. If you want to contribute, feel free to open a pull request on the official repository [here](https://github.com/n4ze3m/dialoqbase).
 
 ## License
 
