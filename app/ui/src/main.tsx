@@ -13,7 +13,6 @@ import BotDSRoot from "./routes/bot/ds";
 import BotSettingsRoot from "./routes/bot/settings";
 import LoginRoot from "./routes/login/root";
 import { AuthProvider } from "./context/AuthContext";
-import SettingsRoot from "./routes/settings/root";
 import BotIntegrationRoot from "./routes/bot/integrations";
 import BotAppearanceRoot from "./routes/bot/appearance";
 import { ConfigProvider } from "antd";
@@ -37,7 +36,6 @@ const router = createHashRouter([
     ),
     path: "/new",
     errorElement: <div></div>,
-
   },
   {
     path: "/bot/:id/embed",
@@ -47,7 +45,6 @@ const router = createHashRouter([
       </BotLayout>
     ),
     errorElement: <div></div>,
-
   },
   {
     path: "/bot/:id",
@@ -57,7 +54,6 @@ const router = createHashRouter([
       </BotLayout>
     ),
     errorElement: <div></div>,
-
   },
   {
     path: "/bot/:id/data-sources",
@@ -67,7 +63,6 @@ const router = createHashRouter([
       </BotLayout>
     ),
     errorElement: <div></div>,
-
   },
   {
     path: "/bot/:id/settings",
@@ -77,7 +72,6 @@ const router = createHashRouter([
       </BotLayout>
     ),
     errorElement: <div></div>,
-
   },
   {
     path: "/bot/:id/integrations",
@@ -87,7 +81,6 @@ const router = createHashRouter([
       </BotLayout>
     ),
     errorElement: <div></div>,
-
   },
   {
     path: "/bot/:id/appearance",
@@ -97,23 +90,11 @@ const router = createHashRouter([
       </BotLayout>
     ),
     errorElement: <div></div>,
-
   },
   {
     path: "/login",
     element: <LoginRoot />,
     errorElement: <div></div>,
-
-  },
-  {
-    path: "/settings",
-    element: (
-      <DashboardLayout>
-        <SettingsRoot />
-      </DashboardLayout>
-    ),
-    errorElement: <div></div>,
-
   },
   {
     path: "/*",

@@ -20,17 +20,6 @@ services:
     volumes:
       - .uploads:/app/uploads
 
-  dialoqbase-pg:
-    image: ankane/pgvector:latest
-    container_name: dialoqbase-postgres
-    restart: unless-stopped
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: dialoqbase
-    volumes:
-      - .postgres:/var/lib/postgresql/data
-
   redis:
     image: redis:latest
     container_name: redis

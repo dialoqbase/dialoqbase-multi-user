@@ -63,9 +63,9 @@ export default function DashboardLayout({
                         <Menu.Button className="flex max-w-xs items-center rounded-full bg-white text-sm">
                           <span className="sr-only">Open user menu</span>
                           <Avatar shape="square">
-                            {users?.user_metadata?.full_name ||
-                              users?.email ||
-                              "..."}
+                            {users?.user_metadata?.full_name?.charAt(0) ||
+                              users?.email?.charAt(0) ||
+                              "?"}
                           </Avatar>
                         </Menu.Button>
                       </div>
@@ -79,19 +79,6 @@ export default function DashboardLayout({
                         leaveTo="transform opacity-0 scale-95"
                       >
                         <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                          <Menu.Item>
-                            {({ active }) => (
-                              <Link
-                                className={classNames(
-                                  active ? "bg-gray-100" : "",
-                                  "block px-4 py-2 text-sm text-gray-700"
-                                )}
-                                to="/settings"
-                              >
-                                Settings
-                              </Link>
-                            )}
-                          </Menu.Item>
                           <Menu.Item>
                             {({ active }) => (
                               <span
@@ -120,27 +107,20 @@ export default function DashboardLayout({
                   <div className="flex items-center px-4">
                     <div className="flex-shrink-0">
                       <Avatar shape="square">
-                        {users?.user_metadata?.full_name ||
-                          users?.email ||
-                          "..."}
+                        {users?.user_metadata?.full_name?.charAt(0) ||
+                          users?.email?.charAt(0) ||
+                          "?"}
                       </Avatar>
                     </div>
                     <div className="ml-3">
                       <div className="text-base font-medium text-gray-800">
-                        {users?.user_metadata?.full_name ||
-                          users?.email ||
-                          "..."}
+                        {users?.user_metadata?.full_name?.charAt(0) ||
+                          users?.email?.charAt(0) ||
+                          "?"}
                       </div>
                     </div>
                   </div>
                   <div className="mt-3 space-y-1">
-                    <Disclosure.Button
-                      as={Link}
-                      to="/settings"
-                      className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
-                    >
-                      Settings
-                    </Disclosure.Button>
                     <Disclosure.Button
                       onClick={() => {
                         supabase.auth.signOut();
