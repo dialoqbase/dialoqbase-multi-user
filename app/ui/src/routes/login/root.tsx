@@ -17,7 +17,8 @@ export default function LoginRoot() {
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
             <span className="font-medium text-indigo-600 hover:text-indigo-500">
-              This is just demo app, please don't use it for production
+              Love Dialoqbase? Buy me a coffee! ☕️{" "}
+              <a href="https://ko-fi.com/n4ze3m">https://ko-fi.com/n4ze3m</a>
             </span>
           </p>
         </div>
