@@ -13,6 +13,7 @@
     "@ant-design/cssinjs": "^1.11.1",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "@mantine/form": "^6.0.13",
     "@supabase/auth-helpers-react": "^0.4.2",
     "@supabase/auth-ui-react": "^0.4.2",
     "@supabase/auth-ui-shared": "^0.1.6",
@@ -30,8 +31,11 @@
     "react-markdown": "^8.0.7",
     "react-router-dom": "^6.11.2",
     "react-syntax-highlighter": "^15.5.0",
+    "rehype-mathjax": "^4.0.3",
     "remark-gfm": "^3.0.1",
-    "sort-by": "^1.2.0"
+    "remark-math": "^5.1.1",
+    "sort-by": "^1.2.0",
+    "zustand": "^4.3.9"
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.3",

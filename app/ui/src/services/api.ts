@@ -1,7 +1,7 @@
 import axios from "axios";
 import { supabase } from "../supabase";
 
-const baseURL = import.meta.env.VITE_API_URL || "/api/v1";
+export const baseURL = import.meta.env.VITE_API_URL || "/api/v1";
 
 const instance = axios.create({
   baseURL,

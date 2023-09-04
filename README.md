@@ -12,14 +12,12 @@
 
 ## Important
 
-<h1>
-This is a different version of Dialoqbase with support for multiple users, using Supabase for authentication. I will not be updating this repository frequently. The official repository can be found  <a href="https://github.com/n4ze3m/dialoqbase">here</a>.
-</h1>
+<h3>
+This is a different version of Dialoqbase with support for multiple users, using Supabase for authentication. I will not be updating this repository frequently. The official repository can be found  <a href="https://github.com/n4ze3m/dialoqbase">here</a>. If you use this repository for commercial purposes, please consider donating to my <a href="https://ko-fi.com/n4ze3m">Ko-fi</a> page or <a href="https://github.com/sponsors/n4ze3m/">GitHub Sponsors</a>.
+</h3>
 
 Dialoqbase is an open-source application designed to facilitate the creation of custom chatbots using a personalized knowledge base. The application leverages advanced language models to generate accurate and context-aware responses. Additionally, it utilizes PostgreSQL, a robust relational database management system, for efficient vector search operations and for storing the knowledge base.
 
-> **Warning**
-> This project is a side project and is still under development. Use it at your own risk
 
 Here's a demo of how it works (v0.0.1):
 
